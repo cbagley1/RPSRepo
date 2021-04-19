@@ -71,11 +71,15 @@
             console.log(score);
 
             if(score>0){
-                console.log("You won. Congratulations!");
+                alert("You won. Congratulations!");
             }else if(score<0){
-                console.log("You lost. Unlucky.")
+                alert("You lost. Unlucky.");
             }else if(score=0){
-                console.log("You tied. Rematch?")
+                alert("You tied. Rematch?");
+            }else if(score=5){
+                alert("You won every round! Try the lottery!");
+            }else if(score=-5){
+                alert("You lost every round. Maybe find a new hobby.");
             }
         }
         gamePlay();
